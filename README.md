@@ -985,6 +985,25 @@ true
 
 [JSBin](http://jsbin.com/cuyer/1/edit) | [JSBin explained](http://jsbin.com/suzev/1/edit)
 
+Q. What's the result?
+
+```javascript
+var foo = 1,
+    bar = function foo(x) {
+        x && foo(x++);
+    };
+console.log(foo);
+```
+
+A.
+
+```javascript
+1
+```
+
+[JSBin](http://jsbin.com/viciwe/1/edit) | [JSBin explained](http://jsbin.com/jilequ/1/edit)
+
+
 # License
 
 Released under the MIT License.
